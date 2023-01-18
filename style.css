@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    max-width: 1920px;
+    margin: auto;
+}
+
+.HeaderAndMenu {
+    width: 100%;
+    height: 6.3541666666667vw;
+    display: flex;
+}
+
+.ContainerImgPorsche {
+    width: 50%;
+}
+
+.ImgPorsche {
+    width: 12.5vw;
+    max-width: 240px;
+    margin: 2vw 0 0 14vw;
+    border: solid 0.1px grey;
+}
+
+.NavBarHeader {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.UlNavBarHeader {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.LiNavBarHeader {
+    transition: all 0.7s;
+    font-size: 1.5rem;
+    font-size: 1.04vw;
+}
+
+.LiNavBarHeader:hover {
+    transform: scale(1.2);
+    font-weight: 700;
+}
+
+.BackGroundImageBanner {
+    width: 100%;
+    height: 40.625vw;
+    background-image: url("./assets/images/Banner1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.ContainerTituloBanner {
+    width: 19.6875vw;
+    max-width: 378px;
+    height: 15.88vw;
+    max-height: 305px;
+    margin: 8vw 0 0 14vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.TituloBanner {
+    color: white;
+    font-size: 3.34vw;
+    font-weight: 700;
+}
+
+/* Main */
+
+.SectionModelos {
+    padding: 2.86vw 4.43vw 0 4.43vw;
+}
+
+.TituloModelos {
+    font-size: 2.5vw;
+    font-weight: 800;
+}
+
+.ContainerUmImagemTresCarros,
+.ContainerDoisImagemTresCarros {
+    display: flex;
+}
+
+.Container718,
+.Container911,
+.ContainerTaycan,
+.ContainerPanamera,
+.ContainerMacan,
+.ContainerCayenne {
+    position: relative;
+    width: 29.5vw;
+    max-width: 566px;
+    height: 20.73vw;
+    max-height: 398px;
+    margin: 1.35vw 1.35vw 0 0;
+}
+
+.IMGCarro {
+    width: 100%;
+    max-width: 566px;
+    height: 100%;
+    margin: 1.35vw 1.35vw 0 0;
+}
+
+.CarName {
+    font-size: 2.34vw;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 2.5vw;
+    left: 1.5vw;
+}
+
+.ButtonConfigurarAndVerTudo {
+    position: absolute;
+    left: 1.45vw;
+    bottom: 0;
+}
+
+.ButtonConfigurar {
+    width: 6.92vw;
+    max-width: 133px;
+    height: 2.6vw;
+    max-height: 50px;
+    background-color: white;
+    border: none;
+    font-size: 1.04vw;
+    font-weight: 400;
+    margin: 0 1.35vw 0 0;
+    transition: all 1s;
+    letter-spacing: 0.3px;
+}
+
+.ButtonConfigurar:hover {
+    background-color: red;
+    color: white;
+}
+
+.ButtonVerTudo {
+    width: 6.19vw;
+    max-width: 119px;
+    height: 2.60vw;
+    max-height: 50px;
+    color: white;
+    font-size: 1vw;
+    font-weight: 700;
+    background-color: rgb(0, 0, 0, 0);
+    border:solid 0.2px rgb(255, 255, 255, 1);
+    transition: all 1s;
+    letter-spacing: 0.3px;
+}
+
+.ButtonVerTudo:hover {
+    color: red;
+    border:solid 1px rgb(255, 0, 0);
+}
+
+.ContainerGaleria {
+    margin: 3vw 10.23vw 1.4vw 10.23vw;
+}
+
+.SectionImagensGaleria {
+    width: 80vw;
+    max-width: 1527px;
+    height: 41.041666666667vw;
+    max-height: 788px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.TituloGaleria {
+    font-size: 2.08vw;
+    font-weight: 800;
+}
+
+.SectionImagensGaleria div img {
+    width: 100%;
+    height: 100%;
+    padding: 0.2vw;
+}
+
+.colorBlue {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.colorGreen {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.colorYellow {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.colorMagenta {
+    grid-area: 2 / 3 / 4 / 5;
+}
+
+.colorRed {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.colorGray {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.colorBrown {
+    grid-area: 1 / 5 / 3 / 7;
+}
+
+.colorAqua {
+    grid-area: 3 / 5 / 4 / 6;
+}
+
+.colorCornflowerblue {
+    grid-area: 3 / 6 / 4 / 7;
+}
+
+/* Footer */
+
+.SectionFooter {
+    width: 100%;
+    height: 6.5625vw;
+    max-height: 126vw;
+    background-color: #F6F6F6F6;
+    display: flex;
+}
+
+.SocialMediaLogos {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.LogoIMG {
+    width: 2vw;
+    max-width: 40px;
+}
+
+.ContainerCopyrightText {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.LayoutMadeBy {
+    color: black;
+    font-size: 0.84vw;
+}
+
+.LayoutMadeBy a{
+    color: rgb(19, 137, 255);
+}
+
+.Copyright {
+    font-size: 1.04vw;
+    font-weight: 700;
+}
