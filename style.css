@@ -133,6 +133,7 @@ body {
     position: absolute;
     left: 1.45vw;
     bottom: 0;
+    display: flex;
 }
 
 .ButtonConfigurar {
@@ -152,6 +153,12 @@ body {
 .ButtonConfigurar:hover {
     background-color: red;
     color: white;
+    cursor: pointer;
+}
+
+.ButtonConfigurar img {
+    width: 0.7vw;
+    max-width: 10px;
 }
 
 .ButtonVerTudo {
@@ -170,7 +177,8 @@ body {
 
 .ButtonVerTudo:hover {
     color: red;
-    border:solid 1px rgb(255, 0, 0);
+    border:solid 0.2px rgb(255, 0, 0);
+    cursor: pointer;
 }
 
 .ContainerGaleria {
@@ -185,6 +193,18 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
+}
+
+.SectionImagensGaleria div img {
+    transition: all 1s;
+}
+
+.SectionImagensGaleria div img:hover:not(:hover) {
+    opacity: 0.3;
+}
+
+.SectionImagensGaleria div img:hover {
+    transform: scale(1.05);
 }
 
 .TituloGaleria {
