@@ -66,7 +66,7 @@ body {
 .BackGroundImageBanner {
     width: 100%;
     height: 40.625vw;
-    background-image: url("./assets/images/Banner1.png");
+    background-image: url("./assets/Imagens_em_webp/Banner1.webp");
     background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -199,7 +199,6 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    transition: all 2s;
 }
 
 .SectionImagensGaleria:hover :not(:hover) {
@@ -326,22 +325,30 @@ body {
         max-height: fit-content;
     }
     #HeaderAndMenu {
-        position: relative;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        z-index: 2;
     }
     .ContainerImgPorsche {
         width: 100%;
-        background-image: url("./assets/images/porsche-logo.png");
+        /* background-image: url("./assets/Imagens_em_webp/porsche-logo.webp");
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: center; */
+        display: flex;
+        justify-content: center;
     }
     .ImgPorsche {
-        display: none;
+        height: 100%;
+        margin: 0;
+        border: none;
     }
     .NavBarHeader {
         display: none;
     }
-    .HamburguerMenu {
+    .ContainerMenuHamburguer {
         position: absolute;
         right: 0;
         width: 29.6vw;
@@ -353,23 +360,36 @@ body {
         flex-direction: column;
         column-gap: 10vw;
     }
+    .ContainerMenuHamburguer label {
+        position: relative;
+        height: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    #checkboxMenu {
+    position: absolute;
+    opacity: 0;
+    }
     .line1,
     .line2,
     .line3 {
-        height: 1px;
+        height: 2px;
         width: 4vw;
         background-color: white;
+        border-radius: 30px;
+        transition: 0.25s ease-in-out;
     }
     .BackGroundImageBanner {
         height: 127.67vw;
         background-size: cover;
-        background-position: -92vw center;
+        background-position: -92vw top;
     }
     .ContainerTituloBanner {
         margin: 3.13vw 0 0 3.74vw;
     }
     .TituloBanner {
-        font-size: 8.87vw;
+        font-size: 5.87vw;
     }
     #SectionModelos {
         padding: 10.2vw 6.67vw 0 6.67vw;
