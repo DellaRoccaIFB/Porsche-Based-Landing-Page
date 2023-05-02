@@ -307,9 +307,6 @@ body {
 .LayoutMadeBy a{
     color: rgb(19, 137, 255);
 }
-.LayoutMadeBy .virgula::after {
-    content: ",";
-}
 
 .LayoutMadeBy a:hover{
     font-weight: 700;
